@@ -1,5 +1,8 @@
 import socket
 
+import selectors
+print(type(selectors.DefaultSelector()))
+
 client_socket = socket.socket()
 client_socket.connect(('localhost',12345))
 
